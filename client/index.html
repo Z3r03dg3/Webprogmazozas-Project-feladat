@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Online Napló</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Online Napló</h1>
+
+        <p id="message"></p>
+
+        <!-- AUTH -->
+        <div id="authSection">
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Felhasználónév"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Jelszó"
+            >
+
+            <button type="button" id="registerBtn">
+                Regisztráció
+            </button>
+
+            <button type="button" id="loginBtn">
+                Bejelentkezés
+            </button>
+
+        </div>
+
+
+        <!-- NOTES -->
+        <div id="notesSection" style="display: none;">
+
+            <button type="button" id="logoutBtn">
+                Kijelentkezés
+            </button>
+
+            <div class="note-form">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Jegyzet címe"
+                >
+
+                <textarea
+                    id="content"
+                    placeholder="Jegyzet tartalma"
+                ></textarea>
+
+                <button type="button" id="saveBtn">
+                    Jegyzet mentése
+                </button>
+
+            </div>
+
+            <div id="notesContainer"></div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
